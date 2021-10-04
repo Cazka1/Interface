@@ -5,6 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Square square = new Square("square", 4);
         Circle circle = new Circle("circle",5);
+        TrianglePerimeter trianglePerimeter = (a,b,c) -> System.out.println("Triangle perimeter is " + (a+b+c));
+        trianglePerimeter.perimeter(2,3,4);
         Rectangle rectangle = new Rectangle("rectangle",3,4);
         System.out.println("square name is " + square.sayMyName());
         System.out.println("Square area = " + square.countArea());
@@ -12,5 +14,6 @@ public class Main {
         System.out.println("Circle area = " + circle.countArea());
         System.out.println("Rectangle name is " + rectangle.sayMyName());
         System.out.println("Rectangle area = " + rectangle.countArea());
+
     }
 }

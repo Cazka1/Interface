@@ -18,4 +18,5 @@ public class Square implements Figure {
     public int countArea() {
         return a * a;
     }
+
 }
